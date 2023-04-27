@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="432.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Controller">
+   <children>
+      <VBox prefHeight="432.0" prefWidth="637.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #200724, #9732a8);">
+         <children>
+            <Label prefHeight="71.0" prefWidth="637.0" style="-fx-alignment: Center;" text="CPU Scheduling" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="JetBrains Mono Medium" size="28.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="GenerateProcess" mnemonicParsing="false" onAction="#generateNewFile" prefHeight="23.0" prefWidth="190.0" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0; -fx-text-fill: white;" text="Generate Processes File">
+                     <opaqueInsets>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="80.0" right="20.0" top="30.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="chooseFile" mnemonicParsing="false" onAction="#chooseFileToRead" prefHeight="23.0" prefWidth="170.0" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0; -fx-text-fill: white;" text="Choose Processes File">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="100.0" right="20.0" top="30.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </HBox>
+            <ComboBox fx:id="algorithmChoice" prefWidth="150.0" promptText="Algorithm" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-radius: 10;">
+               <VBox.margin>
+                  <Insets left="230.0" top="10.0" />
+               </VBox.margin>
+            </ComboBox>
+            <TextField fx:id="timeQuantum" prefWidth="150.0" promptText="Round-Robin Time Quantum">
+               <VBox.margin>
+                  <Insets left="220.0" right="250.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="Go" mnemonicParsing="false" onAction="#startScheduling" prefHeight="33.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0; -fx-text-fill: white;" text="Start">
+               <VBox.margin>
+                  <Insets left="230.0" top="40.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="exit" mnemonicParsing="false" onAction="#exit" prefHeight="33.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0; -fx-text-fill: white;" text="Exit">
+               <VBox.margin>
+                  <Insets left="230.0" top="25.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

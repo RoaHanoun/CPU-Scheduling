@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="520.0" prefWidth="602.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #9c7f7c, #594f4f);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Algorithm.AlgorithmController">
+   <children>
+      <Label fx:id="algorithmToRun" layoutY="1.0" prefHeight="73.0" prefWidth="602.0" style="-fx-alignment: center;" text="Algorithm" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="28.0" />
+         </font>
+      </Label>
+      <VBox layoutY="74.0" prefHeight="428.0" prefWidth="602.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="601.0" style="-fx-alignment: center;" text="CPU Bursts" textFill="WHITE" />
+            <TextArea fx:id="CPU_Bursts_info" editable="false" prefHeight="115.0" prefWidth="602.0" style="-fx-background-color: transparent; -fx-opacity: 0.7;" />
+            <Label prefHeight="17.0" prefWidth="601.0" style="-fx-alignment: center;" text="IO Bursts" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea fx:id="IO_Bursts_info" editable="false" prefHeight="115.0" prefWidth="602.0" style="-fx-background-color: transparent; -fx-opacity: 0.7;" />
+            <Label prefHeight="17.0" prefWidth="605.0" style="-fx-alignment: center;" text="Results" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea fx:id="Results" editable="false" prefHeight="110.0" prefWidth="602.0" style="-fx-background-color: transparent; -fx-opacity: 0.7;" />
+         </children>
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
